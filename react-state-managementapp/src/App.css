@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  min-height:100vh;
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -7,14 +10,16 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /*background-color: #282c34;*/
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  background: rgba(255,255,255,0.15);
+  border-bottom: 1px solid #b8b0d1;
 }
 
 .App-link {
@@ -28,4 +33,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+input[type="text"], input[type="number"]{
+  padding:5px 10px;
+  width: 200px;
+  margin: 10px;
+  font-family: "Trebuchet MS";
+  border-radius: 11px;
+  height: 25px;
+  border: 1px solid #a18cd1;
+}
+input[type="text"]:focus, input[type="number"]:focus, input[type="submit"]:focus{
+  outline:none;
+}
+input[type="submit"]{
+  padding: 7px 10px;
+  background: #9871d1;
+  border-radius: 7px;
+  color: #fff;
+  border: 1px solid #a18cd1;
 }
