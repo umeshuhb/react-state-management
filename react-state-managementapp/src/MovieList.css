@@ -1,0 +1,10 @@
+.MovieList {
+    margin: 5vh;
+    text-align: left;
+    font-size: calc(10px + 2vmin);
+    color: #333;
+}
+
+li span{
+    font-size: 15px;
+}

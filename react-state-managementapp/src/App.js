@@ -3,16 +3,18 @@ import './App.css';
 import Sidebar from './components/Sidebar';
 import Movielist from './components/MovieList';
 import {MovieProvider} from "./components/MovieContext";
+import AddMovie from './components/AddMovie';
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <MovieProvider>
-                    <Sidebar/>
-                    <Movielist/>
-                </MovieProvider>
-            </header>
+            <MovieProvider>
+                <header className="App-header">
+                        <Sidebar/>
+                </header>
+                <AddMovie />
+                <Movielist/>
+            </MovieProvider>
     </div>
 );
 }

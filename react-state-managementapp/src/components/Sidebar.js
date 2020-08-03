@@ -7,13 +7,9 @@ class Sidebar extends Component {
 
     render() {
         const [movies, setMovies] = this.context;
-        console.log(movies);
-        //  const movie = movies[0].name;
         return (
             <div>
                 Movies : {movies.length}   <br/>
-                menu
-                <hr/>
             </div>
         )
     }

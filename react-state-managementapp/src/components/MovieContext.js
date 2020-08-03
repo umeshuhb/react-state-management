@@ -12,10 +12,24 @@ export const MovieProvider = props =>{
         price : "125",
         id : 456
     },{
-        name : "Alladin",
-        price : "175",
+        name : "Cars",
+        price : "150",
         id: 410
-    }]);
+    },{
+        name : "The Jungle Book",
+        price : "185",
+        id: 411
+    },{
+        name : "Lion King",
+        price : "185",
+        id: 412
+    },
+    {
+        name : "Madagascar",
+        price : "185",
+        id: 413
+    }
+    ]);
 
     return (
         <MovieContext.Provider value={[movies, setMovies]} >

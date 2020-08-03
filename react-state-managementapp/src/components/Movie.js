@@ -4,7 +4,7 @@ const Movie = (props)=>{
 
     const movie = props.movie;
     return(
-        <li>{movie.name}</li>
+        <li>{movie.name} <span>(${movie.price})</span></li>
     )
 
 }
